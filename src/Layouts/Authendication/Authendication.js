@@ -18,7 +18,7 @@ export default function Authendication({ setStore, state }) {
 
     async function getEmployes(token){
         Axios.create({
-            baseURL:'http://localhost:5000',
+            baseURL:'https://ems-server-in.herokuapp.com',
             headers:{ 
                 Authorization: `Bearer ${token}`   
             }
@@ -30,7 +30,7 @@ export default function Authendication({ setStore, state }) {
 
     async function createEmployes(){
         Axios.create({
-            baseURL:'http://localhost:5000',
+            baseURL:'https://ems-server-in.herokuapp.com',
             headers:{ 
                 Authorization: `Bearer ${state.auth.token}`   
             }
@@ -44,7 +44,7 @@ export default function Authendication({ setStore, state }) {
         if(state.selectd!==null){
             //console.log(state.selectd)
             Axios.create({
-                baseURL:'http://localhost:5000',
+                baseURL:'https://ems-server-in.herokuapp.com',
                 headers:{ 
                     Authorization: `Bearer ${state?.auth?.token}`   
                 }
@@ -67,7 +67,7 @@ export default function Authendication({ setStore, state }) {
 
     async function deleteEmployes(){
         Axios.create({
-            baseURL:'http://localhost:5000',
+            baseURL:'https://ems-server-in.herokuapp.com',
             headers:{ 
                 Authorization: `Bearer ${state.auth.token}`   
             }
@@ -83,7 +83,7 @@ export default function Authendication({ setStore, state }) {
     async function sendAuthRequest(){
         try{
             if(auth){
-                Axios.post("http://localhost:5000/auth/signin", userInfo).then((res)=>{
+                Axios.post("https://ems-server-in.herokuapp.com/auth/signin", userInfo).then((res)=>{
                     if(res.data.status===200){ 
                         setStore({ ...state, auth:res.data})
                     } else {
@@ -91,7 +91,7 @@ export default function Authendication({ setStore, state }) {
                     }   
                 })                  
             } else {
-                Axios.post("http://localhost:5000/auth/login", userInfo).then((res)=>{
+                Axios.post("https://ems-server-in.herokuapp.com/auth/login", userInfo).then((res)=>{
                     if(res.data.status===200){
                         if(res?.data?.result?.admin===false){
                             const emlployee = []
