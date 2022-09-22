@@ -1,0 +1,82 @@
+.Authendication{
+    height: 80vh;
+    width: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(49, 95, 115, 0.1), 0 6px 20px 0 rgba(149, 176, 186, 0.21);
+}
+
+.auth-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fdfcfcc7;
+}
+
+input {
+    background-color: white;
+    margin: 15px 10px;
+    outline: none;
+    display: block;
+    min-width: 200px;
+    width: 85%;
+    border: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    line-height: inherit;
+    box-shadow: 0 4px 8px 0 rgb(53 105 128 / 10%), 0 6px 20px 0 rgb(165 200 213 / 21%);
+}
+
+.button {
+    margin-top: 20px;
+    outline: none;
+    background: #bdc7cf;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #969fa8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dfe3e4, #969fa8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    min-width: 200px;
+    width: 85%;
+    border: 0;
+    border-radius: 3px;
+    padding: 6px 20px;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 350;
+    line-height: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(188, 211, 221, 0.1), 0 6px 20px 0 rgb(165 200 213 / 21%);
+}
+
+button:hover{
+    box-shadow: 0 4px 8px 0 rgba(168, 182, 188, 0.3), 0 6px 20px 0 rgba(186, 199, 203, 0.31);
+}
+
+.auth-text{
+    color: #969fa8;
+    font-size: medium;
+}
+
+.array-buttons{
+    margin-top: 20px;
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.array-button-element{
+    font-size: small;
+    margin-right: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8dbdd;
+    border: .5px solid rgb(222, 222, 222);
+}

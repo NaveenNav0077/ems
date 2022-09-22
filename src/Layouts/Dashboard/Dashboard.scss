@@ -1,0 +1,74 @@
+.Dashboard{
+    height: 80vh;
+    width: 65vw;
+    box-shadow: 0 4px 8px 0 rgba(45, 84, 101, 0.1), 0 6px 20px 0 rgba(139, 161, 169, 0.21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.tags-container{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag{
+    min-height: 40px;
+    background-color: #FFFFFF;
+    padding: 5px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tag-title{
+  margin: 30px 0px 20px 0px;
+}
+
+.tag-element{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-left: 1px solid rgb(235, 235, 235);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.277);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 137, 137, 0.373);
+  border-radius: 3px;
+}
+.tags:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
